@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Area</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header__inner">
+                <div class="agent-id">
+                    <span>ID-Агента:</span>
+                    23455676
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Связаться с оператором</a>
+                            <a class="menu__list-link" href="#">Сформировать QR-код агента</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="close-btn btn-reset">Выйти</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <form class="borrower-details" action="#">
+
+                <div class="borrower-details__top">
+                    <h1 class="borrower-details__title">Данные заемщика</h1>
+                    <div class="borrower-details__inputs">
+                        <div class="borrower-details__item">
+                            <fieldset class="borrower-details__field">
+                                <legend class="borrower-details__legend">ФИО</legend>
+                                <input class="input-form borrower-details__name" type="text"
+                                    placeholder="Иванов Петр Сергеевич">
+                            </fieldset>
+                            <fieldset class="borrower-details__field">
+                                <legend class="borrower-details__legend">Серия и номер паспорта</legend>
+                                <input class="input-form borrower-details__passport" type="number"
+                                    placeholder="12 23 456789">
+                            </fieldset>
+                            <fieldset class="borrower-details__field">
+                                <legend class="borrower-details__legend">Кем выдан паспорт</legend>
+                                <input class="input-form borrower-details__departament" type="text"
+                                    placeholder="УФМС России">
+                            </fieldset>
+                            <fieldset class="borrower-details__field">
+                                <legend class="borrower-details__legend">Код подразделения</legend>
+                                <input class="input-form borrower-details__subdivision" type="number"
+                                    placeholder="324 324">
+                            </fieldset>
+                            <fieldset class="borrower-details__field">
+                                <legend class="borrower-details__legend">Адрес фактического проживания</legend>
+                                <input class="input-form borrower-details__subdivision" type="text"
+                                    placeholder="Москва, ул. Победы, д. 15">
+                            </fieldset>
+
+                        </div>
+                        <div class="borrower-details__item">
+                            <fieldset class="borrower-details__field">
+                                <legend class="borrower-details__legend">Дата рождения</legend>
+                                <input class="input-form borrower-details__birthday" type="date" value="1990-01-01">
+                            </fieldset>
+                            <fieldset class="borrower-details__field">
+                                <legend class="borrower-details__legend">Место рождения</legend>
+                                <input class="input-form borrower-details__location" type="text" placeholder="Москва">
+                            </fieldset>
+                            <fieldset class="borrower-details__field">
+                                <legend class="borrower-details__legend">Дата выдачи</legend>
+                                <input class="input-form borrower-details__receiving" type="date" value="1990-01-01">
+                            </fieldset>
+                            <fieldset class="borrower-details__field">
+                                <legend class="borrower-details__legend">Адрес постоянной регистрации</legend>
+                                <input class="input-form borrower-details__registration" type="text"
+                                    placeholder="Москва, ул. Победы, д. 15">
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="borrower-details__checkboxes">
+                        <label class="checkbox-item" for="registration-adress">
+                            <input class="input-checkbox registration-adress__input" type="checkbox"
+                                name="registration-adress">
+                            Анкетные данные не соответствуют предоставленным документам и данным авто
+                        </label>
+                    </div>
+                </div>
+
+                <div class="borrower-details__bottom">
+                    <h2 class="borrower-details__title">Верификация номера заемщика</h2>
+                    <div class="borrower-details__box">
+                        <fieldset class="borrower-details__field">
+                            <legend class="borrower-details__legend">Номер телефона заемщика</legend>
+                            <input class="input-form borrower-details__phone" type="number"
+                                placeholder="+7 999 555 48 32">
+                            </label>
+                        </fieldset>
+                        <button class="btn borrower-details__btn">
+                            Выслать код подтверждения
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a class="footer__link" href="#">Далее</a>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

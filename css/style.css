@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Monserrat";
+  src: url("../fonts/MontserratRegular.woff2") format("woff2"),
+    url("../fonts/MontserratRegular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Monserrat";
+  src: url("../fonts/MontserratMedium.woff2") format("woff2"),
+    url("../fonts/MontserratMedium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Monserrat";
+  src: url("../fonts/MontserratSemiBold.woff2") format("woff2"),
+    url("../fonts/MontserratSemiBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNovaRegular.woff2") format("woff2"),
+    url("../fonts/ProximaNovaRegular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNovaSemibold.woff2") format("woff2"),
+    url("../fonts/ProximaNovaSemibold.woff") format("woff");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* ==== base ==== */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Monserrat";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000;
+  background-color: #FCFCFC;
+}
+
+.container {
+  max-width: 612px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==== reset ==== */
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.btn-reset {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* ==== variables ==== */
+
+:root {
+  --prime-color: #03a3ff;
+}
+
+/* ==== input type="date" img ==== */
+
+[type="date"] {
+  background: #fff url(../images/arrow-down.svg) 97% 50% no-repeat;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/* ==== header ====    */
+
+.header {
+    background-color: var(--prime-color);
+    margin-bottom: 40px;
+}
+.container-fluid {
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 24px 14px;
+}
+.agent-id {
+}
+.agent-id span{
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__list-item {
+}
+.menu__list-link {
+}
+.close-btn {
+}
+.main {
+}
+
+.borrower-details {
+}
+.borrower-details__title {
+}
+.borrower-details__top,
+.borrower-details__bottom  {
+  margin-bottom: 30px;
+  background: #fff;
+  box-shadow: -24px 11px 124px 17px rgb(0 0 0 / 18%);
+}
+.borrower-details__bottom {
+
+}
+.borrower-details__inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.borrower-details__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.borrower-details__field {
+    border: 1px solid rgba(0,0,0, .2);
+}
+.borrower-details__legend {
+}
+.input-form {
+    border: none;
+    right: 15px 25px;
+}
+.borrower-details__name {
+}
+.borrower-details__passport {
+}
+.borrower-details__departament {
+}
+.borrower-details__subdivision {
+}
+.borrower-details__birthday {
+}
+.borrower-details__location {
+}
+.borrower-details__receiving {
+}
+.borrower-details__registration {
+}
+.borrower-details__checkboxes {
+}
+.checkbox-item {
+}
+.input-checkbox {
+}
+.registration-adress__input {
+}
